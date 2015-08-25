@@ -1,0 +1,61 @@
+
+synthesisDir=V:\data\synthesis\
+interactionMapDir = interactionMaps\
+synthRenderingOutputDir=Z:\CNNRenderings\RandomLight\
+
+#scanName = matt-bed-only
+#scanName = matt-bed-big
+#scanName = dining1
+#scanName = dining2
+#scanName = gates_392_eg_reconstruction
+#scanName = gates386
+scanName = additional_gates381_cleaned
+#scanName = ford
+#scanName = matt-bedroom
+#scanName = matthias-living
+#scanName = dining-large-nowalld
+#scanName = dining-large-nowall
+#scanName = angie-new
+#scanName = james-desk
+#scanName = michael-living
+#scanName = limitation-gates
+#scanName = limitation-gates-dining
+#scanName = dining-round
+
+columnDimension = 0.05
+
+keepTopXCategories = 1
+samplesPerCategory = 1
+maxSampleCount = 1000
+rotationsPerLocation = 20
+
+PBRTSamples = 256
+PBRTResolution = 1024
+PBRTDir = C:\Code\pbrt\
+
+FinalResultsDir = V:\data\synthesis\results\
+
+agentHeightSitting = 1.1
+agentHeightStanding = 1.5
+
+forceConsistentCategory = true
+
+columnRepresentationScene = 
+
+architectureScale = 1.0
+#architectureScale = 1.4
+
+agentSupportFirst = true
+
+minTotalPixelCount = 25
+maxOcclusionPercentage = 0.5
+minScreenCoverage = 0.05
+maxScreenCoverage = 0.6
+renderFieldOfView = 60.0
+
+maxCategoryInstanceCount = 500
+
+haoSynthesisMode = false
+fisherSynthesisMode = false
+skipTextureLoading = false
+

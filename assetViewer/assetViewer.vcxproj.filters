@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mLibSource.cpp" />
+    <ClCompile Include="vizzer.cpp" />
+    <ClCompile Include="..\synthesisCommon\assetManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\synthesisCommon\assetRenderer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\synthesisCommon\eventMap.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="interactionMapMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+    <ClCompile Include="scoreMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+    <ClCompile Include="agentMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+    <ClCompile Include="scanMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+    <ClCompile Include="resultsMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="mLibInclude.h" />
+    <ClInclude Include="vizzer.h" />
+    <ClInclude Include="..\synthesisCommon\assetManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\synthesisCommon\assetRenderer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\synthesisCommon\eventMap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="appState.h" />
+    <ClInclude Include="interactionMapMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+    <ClInclude Include="scoreMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+    <ClInclude Include="agentMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+    <ClInclude Include="scanMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+    <ClInclude Include="resultsMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{9b7a56e2-48c2-44e3-a202-af9f4080303b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{45b5fde6-06ec-4575-bd12-9990d4a944bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modes">
+      <UniqueIdentifier>{45a63404-da68-426f-83d0-2a8c61b9fa3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\modelRendererColor.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\modelRendererTexture.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\modelRendererSH.hlsl">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="UINotes.txt" />
+  </ItemGroup>
+</Project>

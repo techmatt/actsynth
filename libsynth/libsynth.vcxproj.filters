@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="libsynth.cpp" />
+    <ClCompile Include="components\model.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\modelInstance.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\scene.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\category.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\database.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\modelDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\sceneDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\categoryDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="components\interactionMap.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="components\activity.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\activityDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\interactionMapDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="util\distribution.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\objectGroupDistribution.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\HTMLExporter.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\agentGroupDistribution.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="components\agent.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="util\util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\serialization.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="synth\synthUtil.cpp">
+      <Filter>synth</Filter>
+    </ClCompile>
+    <ClCompile Include="databases\scanDatabase.cpp">
+      <Filter>databases</Filter>
+    </ClCompile>
+    <ClCompile Include="components\scan.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentation\meshSegment.cpp">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentation\salientSegmentor.cpp">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentation\segmentor.cpp">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="segmentation\scanLocator.cpp">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="synth\synthesizerScan.cpp">
+      <Filter>synth</Filter>
+    </ClCompile>
+    <ClCompile Include="synth\sceneTemplate.cpp">
+      <Filter>synth</Filter>
+    </ClCompile>
+    <ClCompile Include="synth\columnRepresentation.cpp">
+      <Filter>synth</Filter>
+    </ClCompile>
+    <ClCompile Include="util\PBRTUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\POVRayUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libsynth.h" />
+    <ClInclude Include="components\model.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\modelInstance.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\scene.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\category.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\categoryDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\database.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\modelDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\sceneDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="components\interactionMap.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="components\activity.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\activityDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\interactionMapDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="util\distribution.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\categoryDistribution.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\objectGroupDistribution.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="components\agent.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="util\HTMLExporter.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\agentGroupDistribution.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="synth\synthUtil.h">
+      <Filter>synth</Filter>
+    </ClInclude>
+    <ClInclude Include="databases\scanDatabase.h">
+      <Filter>databases</Filter>
+    </ClInclude>
+    <ClInclude Include="components\scan.h">
+      <Filter>components</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentation\meshSegment.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentation\salientSegmentor.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentation\segmentor.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="segmentation\scanLocator.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="synth\synthesizerScan.h">
+      <Filter>synth</Filter>
+    </ClInclude>
+    <ClInclude Include="synth\sceneTemplate.h">
+      <Filter>synth</Filter>
+    </ClInclude>
+    <ClInclude Include="synth\columnRepresentation.h">
+      <Filter>synth</Filter>
+    </ClInclude>
+    <ClInclude Include="util\synthParams.h" />
+    <ClInclude Include="util\PBRTUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\POVRayUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="components">
+      <UniqueIdentifier>{92e5be68-b062-4462-97e1-e1936007d078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="databases">
+      <UniqueIdentifier>{ee5a7ac4-5fd3-4ac2-9444-d41c7a572444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{63d6de7e-4a23-445a-b6ae-8d6e78f1c5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synth">
+      <UniqueIdentifier>{2dfe1830-209a-4f55-ac8c-1cfa92102c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="segmentation">
+      <UniqueIdentifier>{00c4b316-2c31-4204-93b2-7b015c41457b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\synthParamsDefault.txt" />
+    <Text Include="..\synthParamsDefaultDebug.txt" />
+  </ItemGroup>
+</Project>

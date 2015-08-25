@@ -1,0 +1,5 @@
+
+columnDimension = 0.1
+
+samplesPerCategory = 1
+maxSampleCount = 50

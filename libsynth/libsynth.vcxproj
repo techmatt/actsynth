@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="components\activity.cpp" />
+    <ClCompile Include="components\agent.cpp" />
+    <ClCompile Include="components\category.cpp" />
+    <ClCompile Include="components\interactionMap.cpp" />
+    <ClCompile Include="components\model.cpp" />
+    <ClCompile Include="components\modelInstance.cpp" />
+    <ClCompile Include="components\scan.cpp" />
+    <ClCompile Include="components\scene.cpp" />
+    <ClCompile Include="databases\activityDatabase.cpp" />
+    <ClCompile Include="databases\categoryDatabase.cpp" />
+    <ClCompile Include="databases\database.cpp" />
+    <ClCompile Include="databases\interactionMapDatabase.cpp" />
+    <ClCompile Include="databases\modelDatabase.cpp" />
+    <ClCompile Include="databases\scanDatabase.cpp" />
+    <ClCompile Include="databases\sceneDatabase.cpp" />
+    <ClCompile Include="libsynth.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="segmentation\meshSegment.cpp" />
+    <ClCompile Include="segmentation\salientSegmentor.cpp" />
+    <ClCompile Include="segmentation\scanLocator.cpp" />
+    <ClCompile Include="segmentation\segmentor.cpp" />
+    <ClCompile Include="synth\columnRepresentation.cpp" />
+    <ClCompile Include="synth\sceneTemplate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="synth\synthesizerScan.cpp" />
+    <ClCompile Include="synth\synthUtil.cpp" />
+    <ClCompile Include="util\agentGroupDistribution.cpp" />
+    <ClCompile Include="util\distribution.cpp" />
+    <ClCompile Include="util\HTMLExporter.cpp" />
+    <ClCompile Include="util\objectGroupDistribution.cpp" />
+    <ClCompile Include="util\PBRTUtil.cpp" />
+    <ClCompile Include="util\POVRayUtil.cpp" />
+    <ClCompile Include="util\serialization.cpp" />
+    <ClCompile Include="util\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\activity.h" />
+    <ClInclude Include="components\agent.h" />
+    <ClInclude Include="components\category.h" />
+    <ClInclude Include="components\interactionMap.h" />
+    <ClInclude Include="components\model.h" />
+    <ClInclude Include="components\modelInstance.h" />
+    <ClInclude Include="components\scan.h" />
+    <ClInclude Include="components\scene.h" />
+    <ClInclude Include="databases\activityDatabase.h" />
+    <ClInclude Include="databases\categoryDatabase.h" />
+    <ClInclude Include="databases\database.h" />
+    <ClInclude Include="databases\interactionMapDatabase.h" />
+    <ClInclude Include="databases\modelDatabase.h" />
+    <ClInclude Include="databases\scanDatabase.h" />
+    <ClInclude Include="databases\sceneDatabase.h" />
+    <ClInclude Include="libsynth.h" />
+    <ClInclude Include="segmentation\meshSegment.h" />
+    <ClInclude Include="segmentation\salientSegmentor.h" />
+    <ClInclude Include="segmentation\scanLocator.h" />
+    <ClInclude Include="segmentation\segmentor.h" />
+    <ClInclude Include="synth\columnRepresentation.h" />
+    <ClInclude Include="synth\sceneTemplate.h" />
+    <ClInclude Include="synth\synthesizerScan.h" />
+    <ClInclude Include="synth\synthUtil.h" />
+    <ClInclude Include="util\agentGroupDistribution.h" />
+    <ClInclude Include="util\categoryDistribution.h" />
+    <ClInclude Include="util\distribution.h" />
+    <ClInclude Include="util\HTMLExporter.h" />
+    <ClInclude Include="util\objectGroupDistribution.h" />
+    <ClInclude Include="util\PBRTUtil.h" />
+    <ClInclude Include="util\POVRayUtil.h" />
+    <ClInclude Include="util\synthParams.h" />
+    <ClInclude Include="util\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\synthParamsDefault.txt" />
+    <Text Include="..\synthParamsDefaultDebug.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C7E0E89-DC69-4AC9-8114-2B5132EA2D6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>scenesynth</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\proj\props\mLib.props" />
+    <Import Project="..\proj\props\Boost.props" />
+    <Import Project="..\proj\props\DXSDK.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\proj\props\mLib.props" />
+    <Import Project="..\proj\props\Boost.props" />
+    <Import Project="..\proj\props\DXSDK.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IncludePath>..\libsg\;./;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IncludePath>..\libsg\;./;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>libsynth.h</PrecompiledHeaderFile>
+      <AdditionalOptions>-Zm191 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>libsynth.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Native</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

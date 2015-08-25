@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mLibSource.cpp" />
+    <ClCompile Include="vizzer.cpp" />
+    <ClCompile Include="..\synthesisCommon\assetManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\synthesisCommon\assetRenderer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\synthesisCommon\eventMap.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldMode.cpp">
+      <Filter>modes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mLibInclude.h" />
+    <ClInclude Include="vizzer.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\synthesisCommon\assetManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\synthesisCommon\assetRenderer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\synthesisCommon\eventMap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="appState.h" />
+    <ClInclude Include="fieldMode.h">
+      <Filter>modes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{8c83dd5e-147c-4ff6-8acf-3a2e254e2986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modes">
+      <UniqueIdentifier>{c5847d5a-ed28-4412-9a92-f9b4c3d2c932}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+</Project>
