@@ -1,0 +1,17 @@
+
+#ifndef WINDOWS_UTIL_H_
+#define WINDOWS_UTIL_H_
+
+#ifdef _WIN32
+
+namespace ml {
+
+	namespace util {
+		//! checks an error and exits
+		void ErrorExit(const std::string& functionName);
+	}
+}
+
+#endif
+
+#endif
